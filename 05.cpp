@@ -2,7 +2,7 @@
 using namespace std;
 class Shape{
     public:
-    void print(){
+    virtual void print(){
         cout<<"This is a shape"<<endl;
     }
 };
@@ -29,5 +29,10 @@ int main(){
     Square ob1;
     ob1.Shape::print();
     ob1.Rectangle::print();
+
+    //Shape *p;
+    //p = &ob1;
+    //p->print();
+
     return 0;
 }
