@@ -3,7 +3,7 @@ using namespace std;
 
 class Mammals {
 public:
-    void print() {
+    virtual void print() {
         cout << "I am a mammal" << endl;
     }
 };
