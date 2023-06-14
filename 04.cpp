@@ -16,18 +16,32 @@ class Rectangle{
 };
 class Square:public Rectangle{
     public:
-    Square(int s):Rectangle(s,s){}
+    int l;
+    void input(){
+        int x;
+        cin>>x;
+        x = l;
+        //l = p;
+    }
+
+    Square():Rectangle(l,l){
+        //cout<<"helo";
+       // cout<<"5"<<l;
+    }
 };
 
 int main(){
     Square o[10];
     for(int i=0;i<10;i++){
-        int v1;
-        cin>>v1;
-        Square o1(v1);
-        o[i] = o1;
+        //int v1;
+        //cin>>v1;
+        o[i].input();
         o[i].area();
-    }
+        //o[i].perimeter();
+        //cout<<o[i].l;
+        
 
+    }
+    
     return 0;
 }
